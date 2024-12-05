@@ -4,7 +4,6 @@ import api from "../utils/AxiosInstance";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-
 import "../styles/SignUp.css";
 
 const SignUp = () => {
@@ -17,7 +16,9 @@ const SignUp = () => {
     try {
       const res = await api.post("/user/signup", { username, email, password });
       if (res.data.msg === "User created successfully") {
-        toast.success("User Registered Successfully! Please verify your email.");
+        toast.success(
+          "User Registered Successfully! Please verify your email."
+        );
         navigate("/login");
       } else {
         toast.error("Error occurred");

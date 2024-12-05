@@ -1,11 +1,6 @@
-
-
-
-
 // import React, { useState } from 'react';
 // import api from '../../utils/AxiosInstance';
 // import { toast, ToastContainer } from 'react-toastify';
-
 
 // const AddProducts = () => {
 //   const [title, setTitle] = useState('');
@@ -131,42 +126,42 @@
 
 // export default AddProducts;
 
-import React, { useState } from 'react';
-import api from '../../utils/AxiosInstance';
-import { toast, ToastContainer } from 'react-toastify';
+import React, { useState } from "react";
+import api from "../../utils/AxiosInstance";
+import { toast, ToastContainer } from "react-toastify";
 
 const AddProducts = () => {
-  const [title, setTitle] = useState('');
-  const [imageUrl, setImageUrl] = useState(null);
-  const [price, setPrice] = useState('');
-  const [description, setDescription] = useState('');
-  const [category, setCategory] = useState(''); // State for category
+  const [title, setTitle] = useState("");
+  const [image, setImage] = useState(null);
+  const [price, setPrice] = useState("");
+  const [description, setDescription] = useState("");
+  const [category, setCategory] = useState(""); // State for category
 
   // Handle API request
   const handleAddProducts = async () => {
     const formData = new FormData();
-    formData.append('title', title);
-    formData.append('imageUrl', imageUrl);
-    formData.append('price', price);
-    formData.append('description', description);
-    formData.append('category', category); // Add category to form data
+    formData.append("title", title);
+    formData.append("image", image);
+    formData.append("price", price);
+    formData.append("description", description);
+    formData.append("category", category); // Add category to form data
 
     try {
-      const res = await api.post('/products/add', formData);
-      if (res.data.message === 'Product Added Successfully') {
+      const res = await api.post("/products/add", formData);
+      if (res.data.message === "Product Added Successfully") {
         toast.success(res.data.message);
         // Reset form fields
-        setTitle('');
-        setImageUrl(null);
-        setPrice('');
-        setDescription('');
-        setCategory(''); // Reset category
+        setTitle("");
+        setImage(null);
+        setPrice("");
+        setDescription("");
+        setCategory(""); // Reset category
       } else {
         toast.error(res.data.message);
       }
     } catch (error) {
-      console.error('Error adding product:', error);
-      toast.error('An error occurred while adding the product.');
+      console.error("Error adding product:", error);
+      toast.error("An error occurred while adding the product.");
     }
   };
 
@@ -211,7 +206,7 @@ const AddProducts = () => {
                     id="image"
                     name="image"
                     accept="image/*"
-                    onChange={(e) => setImageUrl(e.target.files[0])}
+                    onChange={(e) => setImage(e.target.files[0])}
                     required
                   />
                 </div>
@@ -264,7 +259,11 @@ const AddProducts = () => {
                   />
                 </div>
 
-                <button type="submit" onClick={handleSubmit} className="btn btn-primary w-100">
+                <button
+                  type="submit"
+                  onClick={handleSubmit}
+                  className="btn btn-primary w-100"
+                >
                   Add Product
                 </button>
               </form>
