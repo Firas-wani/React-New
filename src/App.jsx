@@ -16,7 +16,8 @@ import SmartSwitches from './categories/SmartSwitches'
 import SmartDisplays from './categories/SmartDisplays'
 import AllCategories from './categories/AllCategories'
 import ForgotPassword from './components/ForgotPassword'
-import UserDashboard from './dashboard/UserDashboard'
+import Checkout from './components/productComponents/Checkout'
+// import UserDashboard from './dashboard/UserDashboard'
 
 
 
@@ -45,8 +46,8 @@ function App() {
 <Route path="/smartswitches" element={<SmartSwitches/>}/>
 <Route path="/smartdisplays" element={<SmartDisplays/>}/>
 
-<Route path="/userdashboard" element= {<UserDashboard/>} />
-
+{/* <Route path="/userdashboard" element= {<UserDashboard/>} /> */}
+<Route path="/user/checkout" element={<Checkout />} />
 </Routes>
 
 
