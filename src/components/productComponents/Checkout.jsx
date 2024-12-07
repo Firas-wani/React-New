@@ -1,4 +1,5 @@
 
+
 // import React, { useEffect, useState } from "react";
 // import { useNavigate } from "react-router-dom";
 // import { toast } from "react-toastify";
@@ -130,6 +131,7 @@
 // };
 
 // export default Checkout;
+
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -158,6 +160,9 @@ const Checkout = () => {
 
       setOrderTotal(data.userDetails?.cartValue || 0);
       setUser(data.userDetails?.addresses || []);
+
+      console.log(user);
+
     } catch (error) {
       console.error("Error fetching user data:", error);
       toast.error("Failed to load user details.");
@@ -210,12 +215,14 @@ const Checkout = () => {
                   <strong>Address:</strong>{" "}
                   {`${user[0].landmark}, ${user[0].village} , ${user[0].street}, ${user[0].city}, ${user[0].state}, ${user[0].pincode}`}
                 </p>
+
                 {/* Update Address Link */}
                 <p>
                   <a href="/update-address" className="text-primary">
                     Update Address
                   </a>
                 </p>
+
               </div>
             ) : (
               <p className="text-danger">No user data available.</p>
