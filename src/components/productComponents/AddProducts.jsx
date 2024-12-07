@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import api from "../../utils/AxiosInstance";
 import { toast, ToastContainer } from "react-toastify";
+import  Authorized from "../../authorized/Authorized";
+import AdminCheck from "../../authorized/checkAdmin";
+
 
 const AddProducts = () => {
+  Authorized()
+  AdminCheck()
   const [title, setTitle] = useState("");
   const [image, setImage] = useState(null);
   const [price, setPrice] = useState("");

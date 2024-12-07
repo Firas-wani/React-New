@@ -19,7 +19,7 @@ const  AddAddress =()=> {
   const [fullname, setFullname] = useState("");
   const [street, setStreet] = useState("");
   const [landmark, setLandmark] = useState("");
-  const [village, setVillage] = useState("");
+  
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
   const [pincode, setPincode] = useState();
@@ -28,7 +28,7 @@ const  AddAddress =()=> {
     mobile,
     fullname,
     street,
-    village,
+   
     city,
     state,
     pincode,

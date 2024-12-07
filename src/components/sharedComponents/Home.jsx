@@ -47,7 +47,7 @@ const Home = () => {
         </div>
       ) : (
         <div className="row g-4">
-          {products.slice(-3).map((product) => (
+          {products.slice(-9).map((product) => (
             <div className="col-md-4" key={product._id}>
               <div className="card h-100 shadow-sm">
                 <img
@@ -96,3 +96,4 @@ const Home = () => {
 };
 
 export default Home;
+

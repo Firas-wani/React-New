@@ -17,7 +17,11 @@ import SmartDisplays from './categories/SmartDisplays'
 import AllCategories from './categories/AllCategories'
 import ForgotPassword from './components/ForgotPassword'
 import Checkout from './components/productComponents/Checkout'
-// import UserDashboard from './dashboard/UserDashboard'
+import ResetPassword from './components/ResetPass'
+import UserDashboard from './dashboard/UserDashboard'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SearchResults from './components/productComponents/Search'
+import About from './components/sharedComponents/About'
 
 
 
@@ -34,6 +38,8 @@ function App() {
 <Route path="/signup" element= {<SignUp/>} />
 <Route path="/login" element= {<Login/>} />
 <Route path="/forgotpassword" element= {<ForgotPassword/>} />
+<Route path="/resetpassword" element= {<ResetPassword/>} />
+<Route path="/about" element= {<About/>} />
 
 
 <Route path="/addproducts" element={<AddProducts/>}/>
@@ -45,8 +51,9 @@ function App() {
 <Route path="/smartspeakers" element={<SmartSpeakers/>}/>
 <Route path="/smartswitches" element={<SmartSwitches/>}/>
 <Route path="/smartdisplays" element={<SmartDisplays/>}/>
+<Route path="/search" element={<SearchResults/>}/>
 
-{/* <Route path="/userdashboard" element= {<UserDashboard/>} /> */}
+<Route path="/userdashboard" element= {<UserDashboard/>} />
 <Route path="/user/checkout" element={<Checkout />} />
 </Routes>
 
