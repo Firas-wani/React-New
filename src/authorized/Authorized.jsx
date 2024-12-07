@@ -57,7 +57,7 @@ const Authorized = () => {
       console.log(res.data.message);
       if (res.data.message === "not verified") {
         return navigate("/login");
-      } else if (res.data.message === "verified") {
+      } else if (res.data.message === "Token verified") {
         return true;
       }
     } catch (error) {
