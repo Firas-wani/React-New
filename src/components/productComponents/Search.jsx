@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import api from "../../utils/AxiosInstance";
 import { toast, ToastContainer } from "react-toastify";
+import "../../styles/Global.css";
 const SearchResults = () => {
     const [products, setProducts] = useState([]);
   const [quantity, setQuantity] = useState(1);
@@ -42,7 +43,7 @@ const SearchResults = () => {
   if (error) return <p>{error}</p>;
 
   return (
-    <div className="container py-4">
+    <div className="container py-4 eighty">
           <ToastContainer />
       <h2 className="mb-4">Search Results for "{query}"</h2>
       {results.length > 0 ? (
@@ -51,7 +52,7 @@ const SearchResults = () => {
             <div className="col-md-4" key={product._id}>
               <div className="card h-100">
                 <img
-                  src={product.imageUr}
+                  src={product.imageUrl}
                   className="card-img-top img-fluid"
                   alt={product.name}
                   style={{ height: "250px", objectFit: "cover" }}

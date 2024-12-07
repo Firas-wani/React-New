@@ -23,27 +23,9 @@ import UserDashboard from './dashboard/UserDashboard'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchResults from './components/productComponents/Search'
 import About from './components/sharedComponents/About'
+import Contact from './components/sharedComponents/Contact'
+import Policy from './components/sharedComponents/Policy'
 
-// import React from "react";
-// import Navbar from "./components/sharedComponents/Navbar";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Home from "./components/sharedComponents/Home";
-// import SignUp from "./components/SignUp";
-// import Login from "./components/Login";
-// import Footer from "./components/sharedComponents/Footer";
-// import { ToastContainer } from "react-toastify";
-// import AddProducts from "./components/productComponents/AddProducts";
-// import Cart from "./components/productComponents/Cart";
-// import AddAddress from "./components/productComponents/AddAddress";
-// import SmartSecurity from "./categories/SmartSecurity";
-// import SmartLighting from "./categories/SmartLighting";
-// import SmartSpeakers from "./categories/SmartSpeakers";
-// import SmartSwitches from "./categories/SmartSwitches";
-// import SmartDisplays from "./categories/SmartDisplays";
-// import AllCategories from "./categories/AllCategories";
-// import ForgotPassword from "./components/ForgotPassword";
-// import Checkout from "./components/productComponents/Checkout";
-// import UserDashboard from "./dashboard/UserDashboard";
 
 function App() {
   return (
@@ -63,6 +45,8 @@ function App() {
 <Route path="/forgotpassword" element= {<ForgotPassword/>} />
 <Route path="/resetpassword" element= {<ResetPassword/>} />
 <Route path="/about" element= {<About/>} />
+<Route path="/contact" element= {<Contact/>} />
+<Route path="/policy" element= {<Policy/>} />
 
 
 <Route path="/addproducts" element={<AddProducts/>}/>

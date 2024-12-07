@@ -24,7 +24,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/privacy" className="text-white text-decoration-none">
+                <a href="/policy" className="text-white text-decoration-none">
                   Privacy Policy
                 </a>
               </li>

@@ -3,7 +3,7 @@ import { MdDeleteForever } from "react-icons/md";
 // import Authorized from "../../authorized/Authorized";
 import api from "../../utils/AxiosInstance";
 import { useNavigate } from "react-router-dom";
-
+import  "../../styles/Global.css";
 const Cart = () => {
   // Authorized();
 
@@ -85,7 +85,7 @@ const Cart = () => {
 
 
   return (
-    <div className="container my-4">
+    <div className="container my-4  eighty">
       {/* Conditional Heading */}
       <h1 className="text-center mb-4">
         {products.length > 0 ? "Items in Cart" : "No Items In Cart"}

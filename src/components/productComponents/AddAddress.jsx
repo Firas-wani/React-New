@@ -32,7 +32,7 @@ const AddAddress = () => {
   const addDeliveryDetails = async () => {
     try {
       const res = await api.put("/user/addDeliveryDetails", formData);
-      if (res.data.message === "Delivery Details Updated") {
+      if (res.data.message === "Address Updated") {
         toast.success(res.data.message);
       } else {
         toast.error(res.data.message);

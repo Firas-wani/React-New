@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import "../styles/Global.css"
 const AllCategories = () => {
   const navigate = useNavigate();
 
@@ -11,7 +11,7 @@ const AllCategories = () => {
   };
 
   return (
-    <div className="container py-5">
+    <div className="container py-5 eighty">
       {/* Heading Section */}
       <div className="text-center mb-5">
         <h1 className="display-4 fw-bold">Explore Our Categories</h1>
