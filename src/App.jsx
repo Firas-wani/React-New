@@ -27,6 +27,7 @@ import Contact from './components/sharedComponents/Contact'
 import Policy from './components/sharedComponents/Policy'
 
 
+
 function App() {
   return (
     <div>
@@ -59,6 +60,7 @@ function App() {
 <Route path="/smartswitches" element={<SmartSwitches/>}/>
 <Route path="/smartdisplays" element={<SmartDisplays/>}/>
 <Route path="/search" element={<SearchResults/>}/>
+
 
 <Route path="/userdashboard" element= {<UserDashboard/>} />
 <Route path="/user/checkout" element={<Checkout />} />

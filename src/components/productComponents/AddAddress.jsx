@@ -45,6 +45,7 @@ const AddAddress = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     addDeliveryDetails();
+    navigate('/user/checkout')
   };
   return (
     <>
@@ -168,6 +169,7 @@ const AddAddress = () => {
                       type="submit"
                       className="btn btn-dark"
                       onClick={handleSubmit}
+                      
                     >
                       Update Address
                     </button>

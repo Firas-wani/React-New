@@ -25,7 +25,7 @@ const Contact = () => {
             reach out to us anytime—we're available 24x7!
           </p>
           <p className="mt-3">
-            <BiMailSend /> : <a href="mailto:help@ecommerceapp.com">help@ecommerceapp.com</a>
+            <BiMailSend /> : <a href="wanifiras7@gmail.com">wanifiras7@gmail.com</a>
           </p>
           <p className="mt-3">
             <BiPhoneCall /> : 012-3456789

@@ -6,7 +6,7 @@ import "../../styles/Navbar.css";
 import api from "../../utils/AxiosInstance";
 import { ToastContainer } from "react-toastify";
 import Cookies from "js-cookie";
-import image from "../../images/logo.png"
+
 
 
 const Navbar = () => {

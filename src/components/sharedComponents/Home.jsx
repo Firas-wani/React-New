@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import api from "../../utils/AxiosInstance";
 import { toast } from "react-toastify";
-
+import "../../styles/Global.css";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
@@ -37,7 +37,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="container py-5">
+    <div className="container py-5 eighty">
       <h1 className="text-center mb-5">New Arrivals!</h1>
       {loading ? (
         <div className="d-flex justify-content-center">
